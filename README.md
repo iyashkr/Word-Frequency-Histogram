@@ -1,12 +1,16 @@
+![](https://img.shields.io/badge/Application-Word_Frequency_Histogram-yellow.svg)
+![](https://img.shields.io/badge/Programming_Language-JavaScript-blue.svg)
+![](https://img.shields.io/badge/Framework_Used-NextJS-brown.svg)
+![](https://img.shields.io/badge/Library-React-red.svg)
+![](https://img.shields.io/badge/Status-Complete-green.svg)
+
 
 # Word Frequency Histogram
 
 This is a NextJs Word Frequency Histogram application project that fetches text data from the URL https://www.terriblytinytales.com/test.txt, analyzes the text, and generates a histogram of the top 20 most occurring words. The project utilizes React.js, Tailwind CSS, and the Recharts library for data visualization.
 
-<p align="center">
-<img src="https://i.postimg.cc/C1Xc7tq3/image.png" width=200 /> 
-<img src="https://i.postimg.cc/yY2xXTxw/image.png" width=200 />
-<img src="https://i.postimg.cc/0NThVbD5/image.png" width=200 />
+<p >
+<img src="https://i.postimg.cc/YS1Drkhb/image.png"/> 
 </p>
 
 ## Libraries and Modules Used
