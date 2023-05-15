@@ -1,38 +1,29 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Word Frequency Histogram
 
-First, run the development server:
+This is a NextJs Word Frequency Histogram application project that fetches text data from the URL https://www.terriblytinytales.com/test.txt, analyzes the text, and generates a histogram of the top 20 most occurring words. The project utilizes React.js, Tailwind CSS, and the Recharts library for data visualization.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Libraries and Modules Used
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- React.js: A JavaScript library for building user interfaces.
+- Tailwind CSS: A utility-first CSS framework for rapid UI development.
+- Recharts: A charting library built with React and D3 for creating interactive and responsive charts.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Code Explanation:
+### Index.js:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- The handleSubmit function is responsible for fetching the text data from the provided URL, sanitizing the text, extracting the words, counting their occurrences, and updating the state with the sorted word count data.
+- The handleExport function is triggered when the "Export" button is clicked. It converts the word count data to CSV format, creates a download link for the CSV file, and triggers the file download.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### histogram.js
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- The Histogram component receives the sorted word count data as props and renders a responsive bar chart using Recharts.
+- The X-axis represents the words, and the Y-axis represents the frequency of occurrences.
 
-## Learn More
+## Regex Explanation:
 
-To learn more about Next.js, take a look at the following resources:
+- In the 'newText' function, a regular expression is used to remove email addresses and URLs while preserving words within URLs.
+- The split method is then used to split the matched string into an array of words, and the filter method is used to remove any empty or whitespace-only words.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
