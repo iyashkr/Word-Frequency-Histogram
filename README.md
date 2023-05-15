@@ -3,6 +3,12 @@
 
 This is a NextJs Word Frequency Histogram application project that fetches text data from the URL https://www.terriblytinytales.com/test.txt, analyzes the text, and generates a histogram of the top 20 most occurring words. The project utilizes React.js, Tailwind CSS, and the Recharts library for data visualization.
 
+<p align="center">
+<img src="https://i.postimg.cc/C1Xc7tq3/image.png" width=200 /> 
+<img src="https://i.postimg.cc/yY2xXTxw/image.png" width=200 />
+<img src="https://i.postimg.cc/0NThVbD5/image.png" width=200 />
+</p>
+
 ## Libraries and Modules Used
 
 - React.js: A JavaScript library for building user interfaces.
