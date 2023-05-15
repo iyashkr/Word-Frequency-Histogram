@@ -9,6 +9,8 @@
 
 This is a NextJs Word Frequency Histogram application project that fetches text data from the URL https://www.terriblytinytales.com/test.txt, analyzes the text, and generates a histogram of the top 20 most occurring words. The project utilizes React.js, Tailwind CSS, and the Recharts library for data visualization.
 
+Vercel Link: https://word-frequency-histogram-tau.vercel.app/
+
 <p >
 <img src="https://i.postimg.cc/YS1Drkhb/image.png"/> 
 </p>
